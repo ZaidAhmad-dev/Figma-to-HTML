@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark: #1E3240;
+    --blue: #AFD4E2;
+    --white: #FFFFFF;
+    --gray: #BDBDBD;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: #E5E5E5;;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.container{
+    padding: 0 16px;
+}
+
+header{
+    background-color: var(--blue);
+    padding: 16px 0;
+}
+
+header nav a.logo{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.412rem;
+}
+
+header nav ul.nav-list-mobile{
+    display: none;
+}
+
+header nav ul.nav-list-mobile li:first-child{
+    padding-top: 20px;
+}
+
+header nav ul.nav-list-mobile li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+header nav ul.nav-list-mobile li a{
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.098rem;
+    display: block;
+}
+
+header nav ul.nav-list-mobile li a:hover{
+    transition: 0.3s all ease-in-out;
+    transform: translateY(-3px);
+}
+
+.logo-ham-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-ham-wrapper button i{
+    cursor: pointer;
+}
+
+button.buttons-wrapper{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+button.buttons-wrapper i{
+    font-size: 20px;
+}
