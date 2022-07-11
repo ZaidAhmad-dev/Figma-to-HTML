@@ -14,12 +14,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- slick slider -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
+    
     <link rel="stylesheet" href="style.css">
     <title>Real Estate Landing Page</title>
 </head>
 <body>
     
     <div id="realWrapper">
+        <!-- start of header -->
         <header>
             <div class="container">
                 <nav>
@@ -36,9 +40,110 @@
                 </nav>
             </div>
         </header>
+        <!-- end of header -->
+
+        <!-- start of hero section -->
+        <div class="real-hero">
+            <div class="container">
+                <div class="real-content-wrapper">
+                    <div class="right-hero">
+                        <div class="hero-img-wrapper">
+                            <img src="images/hero-img.png" alt="hero-img">
+                        </div>
+                    </div>
+                    <div class="left-hero">
+                        <h1>A home is built with love and dreams</h1>
+                        <p>Real estate farm that makes your dreams true</p>
+                        <div class="hero-buttons-wrapper">
+                            <a href="#" type="button">Our projects</a>
+                            <a href="#" type="button">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of hero section -->
+
+        <!-- awards section -->
+        <div class="awards-section">
+            <div class="container">
+                <div class="awards-content-wrapper">
+                    <div class="left-awards">
+                        <div class="left-awards-img-wrapper">
+                            <img src="images/awards-img.png" alt="awards">
+                        </div>
+                    </div>
+                    <div class="right-awards">
+                        <div class="right-awards-content">
+                            <h2>Award winning real estate company in Dubai</h2>
+                            <p>Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+                            <div class="right-total-awards">
+                                <div class="right-awards-item">
+                                    <h3>previous projects</h3>
+                                    <strong>34+</strong>
+                                </div>
+                                <div class="right-awards-item">
+                                    <h3>years experience</h3>
+                                    <strong>20y</strong>
+                                </div>
+                                <div class="right-awards-item">
+                                    <h3>Ongoing projects</h3>
+                                    <strong>12</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of awards section -->
+
+        <!-- projects section -->
+        <div class="projects-section">
+            <div class="container">
+                <div class="projects-content-wrapper">
+                    <div class="projects-header">
+                        <h2>Ongoing projects</h2>
+                        <p>Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+                    </div>
+                    <div class="projects-slider">
+                        <div class="project-slider-item">
+                            <div class="project-slider-img-wrapper">
+                                <img src="images/project-1.png" alt="project">
+                            </div>
+                            <div class="project-slider-item-description">
+                                <strong>Vintage Villa</strong>
+                                <p><i class="fa-solid fa-map-marker-alt"></i> 2715 Ash Dr. San Jose, Dubai</p>
+                            </div>
+                        </div>
+                        <div class="project-slider-item">
+                            <div class="project-slider-img-wrapper">
+                                <img src="images/project-2.png" alt="project">
+                            </div>
+                            <div class="project-slider-item-description">
+                                <strong>Tonga Villa</strong>
+                                <p><i class="fa-solid fa-map-marker-alt"></i> 1901 Thornridge Cir. Shiloh 81063</p>
+                            </div>
+                        </div>
+                        <div class="project-slider-item">
+                            <div class="project-slider-img-wrapper">
+                                <img src="images/project-3.png" alt="project">
+                            </div>
+                            <div class="project-slider-item-description">
+                                <strong>Penthouse</strong>
+                                <p><i class="fa-solid fa-map-marker-alt"></i> 2464 Royal Ln. Mesa, 45463</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of projects section -->
+
     </div>
 
-<!-- <script src="https://use.fontawesome.com/6b514ba987.js"></script> -->
-<script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
