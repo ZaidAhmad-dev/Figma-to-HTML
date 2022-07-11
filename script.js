@@ -15,7 +15,7 @@ bars.addEventListener("click", () => {
     }
 })
 
-$('.projects-slider').slick({
+$('.projects-slider, .testimonial-slider-wrapper').slick({
     mobileFirst: true,
     dots: false,
     infinite: false,

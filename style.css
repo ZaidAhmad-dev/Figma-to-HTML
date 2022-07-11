@@ -53,7 +53,7 @@ header, .real-hero{
     padding: 16px 0;
 }
 
-.awards-section, .projects-section{
+.awards-section, .projects-section, .testimonials-section, .contacts-section, footer{
     padding: 16px 0;
 }
 
@@ -66,6 +66,10 @@ header nav a.logo{
 
 header nav ul.nav-list-mobile{
     display: none;
+    position: absolute;
+    background: #AFD4E2;
+    width: 100%;
+    padding-bottom: 16px;
 }
 
 header nav ul.nav-list-mobile li:first-child{
@@ -217,7 +221,7 @@ button.buttons-wrapper i{
     position: relative;
 }
 
-button.slick-arrow{
+.projects-slider button.slick-arrow{
     font-size: 24px;
     background: none;
     border: none;
@@ -230,6 +234,152 @@ button.slick-arrow{
     color: var(--blue);
 }
 
-button.slick-arrow.slick-prev{
+.projects-slider button.slick-arrow.slick-prev{
     right: 30px;
+}
+
+/* testimonials section */
+.testimonials-section .testimonial-header h2, .testimonials-section .testimonial-header p {
+    margin-bottom: 10px;
+}
+
+.testimonial-description .testimonial-img-wrapper{
+    margin-bottom: 10px;
+}
+
+.testimonial-description .testimonial-description-content h3{
+    position: relative;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    padding-top: 40px;
+}
+
+.testimonial-description .testimonial-description-content h3::before{
+    content: "";
+    position: absolute;
+    background-image: url(images/quotations.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -30px;
+    left: 0;
+    width: 60px;
+    height: 100%;
+}
+
+.testimonial-description .testimonial-description-content h3, .testimonial-description .testimonial-description-content p, .testimonial-description .testimonial-description-content strong{
+    margin-bottom: 5px;
+}
+
+.testimonial-description .testimonial-description-content strong, .testimonial-description .testimonial-description-content span{
+    display: block;
+}
+
+.testimonials-section button.slick-arrow{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ced2d5;
+    font-size: 24px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.testimonials-section button.slick-arrow.slick-prev{
+    right: 30px;
+}
+
+/* contacts section */
+.contacts-section .contacts-content-wrapper .contacts-img-wrapper{
+    margin-bottom: 10px;
+}
+
+.contacts-section .contacts-content-wrapper .contacts-content h2, .contacts-section .contacts-content-wrapper .contacts-content p{
+    margin-bottom: 10px;
+}
+
+.contacts-section .contacts-content-wrapper form input[type="text"],
+.contacts-section .contacts-content-wrapper form input[type="email"],
+.contacts-section .contacts-content-wrapper form input[type="tel"],
+.contacts-section .contacts-content-wrapper form textarea{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #BDBDBD;
+    padding: 14px 0 14px 18px;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid var(--dark);
+}
+
+.contacts-section .contacts-content-wrapper form input[type="submit"]{
+    padding: 18px 24px;
+    background: var(--dark);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.contacts-section .contacts-content-wrapper form span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BDBDBD;
+    opacity: 0.6;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* footer section */
+
+footer{
+    background-color: var(--dark);
+    color: var(--gray);
+}
+
+.footer-list strong{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-list ul li i{
+    margin: 0 10px 5px 0;
+}
+
+.footer-list ul li, .footer-list ul li a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+    color: var(--gray);
+}
+
+.footer-content-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer-content-header .footer-list{
+    width: calc(100%/2 - 20px);
+    margin: 0 auto 0 0;
+}
+
+.footer-content-copyright p{
+    text-align: center;
 }
