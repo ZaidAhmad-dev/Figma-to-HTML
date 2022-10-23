@@ -15,7 +15,7 @@ bars.addEventListener("click", () => {
     }
 })
 
-$('.projects-slider, .testimonial-slider-wrapper').slick({
+$('.projects-slider').slick({
     mobileFirst: true,
     dots: false,
     infinite: false,
@@ -23,11 +23,12 @@ $('.projects-slider, .testimonial-slider-wrapper').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left-long' aria-hidden='true'></i></button>",
     nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right-long' aria-hidden='true'></i></button>",
     responsive: [
       {
-        breakpoint: 576.98,
+        breakpoint: 575.98,
         settings: {
             slidesToShow: 2,
             slidesToScroll: 1
@@ -35,8 +36,24 @@ $('.projects-slider, .testimonial-slider-wrapper').slick({
       },
       {
         breakpoint: 991.98,
-        settings: "unslick"
+        settings: {
+          slidesToShow: 3,
+            slidesToScroll: 1
+        }
       }
     ]
   });
 })
+
+$('.testimonial-slider-wrapper').slick({
+  mobileFirst: true,
+  dots: false,
+  infinite: false,
+  arrows: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left-long' aria-hidden='true'></i></button>",
+  nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right-long' aria-hidden='true'></i></button>",
+});

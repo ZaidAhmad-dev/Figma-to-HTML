@@ -48,7 +48,7 @@
                 <div class="real-content-wrapper">
                     <div class="right-hero">
                         <div class="hero-img-wrapper">
-                            <img src="images/hero-img.png" alt="hero-img">
+                            <img src="images/hero-mobile.png" alt="hero-img">
                         </div>
                     </div>
                     <div class="left-hero">
@@ -118,6 +118,15 @@
                         </div>
                         <div class="project-slider-item">
                             <div class="project-slider-img-wrapper">
+                                <img src="images/project-3.png" alt="project">
+                            </div>
+                            <div class="project-slider-item-description">
+                                <strong>Penthouse</strong>
+                                <p><i class="fa-solid fa-map-marker-alt"></i> 2464 Royal Ln. Mesa, 45463</p>
+                            </div>
+                        </div>
+                        <div class="project-slider-item">
+                            <div class="project-slider-img-wrapper">
                                 <img src="images/project-2.png" alt="project">
                             </div>
                             <div class="project-slider-item-description">
@@ -182,6 +191,17 @@
                                 <span>Artist</span>
                             </div>
                         </div>
+                        <div class="testimonial-description">
+                            <div class="testimonial-img-wrapper">
+                                <img src="images/testimonial.png" alt="testimonial">
+                            </div>
+                            <div class="testimonial-description-content">
+                                <h3>Dream house isn't dream anymore</h3>
+                                <p>Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar.</p>
+                                <strong>Brooklyn Simmons</strong>
+                                <span>Artist</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,20 +211,29 @@
          <div class="contacts-section">
             <div class="container">
                 <div class="contacts-content-wrapper">
-                    <div class="contacts-img-wrapper">
+                    <div class="contact-part contacts-img-wrapper">
                         <img src="images/contacts.png" alt="contacts">
                     </div>
-                    <div class="contacts-content">
-                        <h2>Contact us</h2>
-                        <p>Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+                    <div class="contact-part contacts-content">
+                        <div class="contact-content-header">
+                            <h2>Contact us</h2>
+                            <p>Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+                        </div>
                         <form action="#">
-                            <input type="text" name="fist" id="first" placeholder="First name">
-                            <input type="text" name="last" id="last" placeholder="Last name">
-                            <input type="email" name="email" id="email" placeholder="Email address">
-                            <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                            <div class="form-group">
+                                <input type="text" name="first" id="first" placeholder="First name" class="input-group">
+                                <input type="text" name="last" id="last" placeholder="Last name" class="input-group">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="Email address" class="input-group">
+                                <input type="tel" name="phone" id="phone" placeholder="Phone number" class="input-group">
+                            </div>
                             <textarea name="description" id="description" cols="30" rows="5" placeholder="Description"></textarea>
-                            <input type="submit" value="Get a quote" class="btn btn-submit">
-                            <span>We don’t sell your email and spam</span>
+                            <div class="form-button-wrapper">
+                                <input type="submit" value="Get a quote" class="btn btn-submit">
+                                <span>We don’t sell your email and spam</span>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
@@ -216,39 +245,43 @@
             <div class="container">
                 <div class="footer-content-wrapper">
                     <div class="footer-content-header">
-                        <div class="footer-list">
-                            <strong>Lugar</strong>
-                            <ul>
-                                <li><i class="fa-solid fa-map-marker-alt"></i> 2118 Thornridge Cir. Dubai, UAE 35624</li>
-                                <li><i class="fa-solid fa-phone"></i>+33 415 65356 - 9</li>
-                                <li><i class="fa-solid fa-envelope"></i>contact@lugar.com</li>
-                            </ul>
+                        <div class="footer-col footer-col-1">
+                            <div class="footer-list">
+                                <strong>Lugar</strong>
+                                <ul>
+                                    <li><i class="fa-solid fa-map-marker-alt"></i> 2118 Thornridge Cir. Dubai, UAE 35624</li>
+                                    <li><i class="fa-solid fa-phone"></i>+33 415 65356 - 9</li>
+                                    <li><i class="fa-solid fa-envelope"></i>contact@lugar.com</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="footer-list">
-                            <strong>quick links</strong>
-                            <ul>
-                                <li>Home</li>
-                                <li>About</li>
-                                <li>Project</li>
-                                <li>Contact</li>
-                            </ul>
-                        </div>
-                        <div class="footer-list">
-                            <strong>legal links</strong>
-                            <ul>
-                                <li>Terms</li>
-                                <li>Condition</li>
-                                <li>Policy</li>
-                            </ul>
-                        </div>
-                        <div class="footer-list">
-                            <strong>social media</strong>
-                            <ul>
-                                <li><a href="#">facebook</a></li>
-                                <li><a href="#">twitter</a></li>
-                                <li><a href="#">youtube</a></li>
-                                <li><a href="#">linkedin</a></li>
-                            </ul>
+                        <div class="footer-col footer-col-2">
+                            <div class="footer-list">
+                                <strong>quick links</strong>
+                                <ul>
+                                    <li>Home</li>
+                                    <li>About</li>
+                                    <li>Project</li>
+                                    <li>Contact</li>
+                                </ul>
+                            </div>
+                            <div class="footer-list">
+                                <strong>legal links</strong>
+                                <ul>
+                                    <li>Terms</li>
+                                    <li>Condition</li>
+                                    <li>Policy</li>
+                                </ul>
+                            </div>
+                            <div class="footer-list">
+                                <strong>social media</strong>
+                                <ul>
+                                    <li><a href="#">facebook</a></li>
+                                    <li><a href="#">twitter</a></li>
+                                    <li><a href="#">youtube</a></li>
+                                    <li><a href="#">linkedin</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="footer-content-copyright">
